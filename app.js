@@ -125,5 +125,6 @@ searchInput.addEventListener('keyup', function (e) {
   }
 }); 
 sliderBtn.addEventListener('click', function () {
+  alert("your slider has been created");
   createSlider();
 })
