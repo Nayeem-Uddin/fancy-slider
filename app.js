@@ -45,7 +45,8 @@ const selectItem = (event, img) => {
   if (item === -1) {
     sliders.push(img);
   } else {
-    alert('Hey, Already added !')
+    sliders.pop(img);
+    alert("This will be removed from your slider");
   }
 }
 var timer
@@ -70,7 +71,7 @@ const createSlider = () => {
   imagesArea.style.display = 'none';
   const duration = document.getElementById('duration').value || 1000;
   if(duration<0){
-    alert(`can't be negative`)
+    alert(`can't be negative`);
   }
   sliders.forEach(slide => {
     let item = document.createElement('div')
